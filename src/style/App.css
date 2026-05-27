@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  background: #0a0e27;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, white, transparent),
+    radial-gradient(1px 1px at 33% 80%, white, transparent),
+    radial-gradient(1px 1px at 15% 65%, white, transparent),
+    radial-gradient(2px 2px at 70% 20%, white, transparent),
+    radial-gradient(1px 1px at 45% 15%, white, transparent),
+    radial-gradient(1px 1px at 5% 45%, white, transparent),
+    linear-gradient(180deg, #0a0e27 0%, #1a1f4e 50%, #2a1147 100%);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px, 600px 600px, 400px 400px, 300px 300px, 500px 500px, 200px 200px, 450px 450px, 100% 100%;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #e0e6ff;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    radial-gradient(1px 1px at 25% 25%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 75% 75%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 50% 50%, rgba(135,206,250,0.8), transparent);
+  background-size: 200px 200px;
+  animation: twinkle 4s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes twinkle {
+  0%   { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.App > * {
+  margin: 5px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  padding: 25px 40px;
+  background: rgba(15, 20, 50, 0.7);
+  border: 1px solid rgba(100, 150, 255, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 40px rgba(100, 150, 255, 0.2);
+  max-width: 900px;
+}
+
+.header h1 {
+  background: linear-gradient(90deg, #64b5f6, #ba68c8, #f06292);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5em;
+  margin: 0 0 12px 0;
+  letter-spacing: 2px;
+  text-shadow: 0 0 30px rgba(100, 150, 255, 0.5);
+}
+
+.header p {
+  margin: 6px 0;
+  color: #b0b8e0;
+  font-size: 1.05em;
+}
+
+.code {
+  padding: 4px 10px;
+  color: #00ffaa;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 255, 170, 0.3);
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+}
+
+.content {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(100, 150, 255, 0.4),
+              0 0 30px rgba(186, 104, 200, 0.3);
+}
+
+.content > img {
+  display: block;
+  max-width: 720px;
+  max-height: 500px;
+  border-radius: 12px;
+}
+
+.content > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ─── Кнопки ─── */
+button {
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(100, 150, 255, 0.2), rgba(186, 104, 200, 0.2));
+  border: 1.5px solid rgba(100, 150, 255, 0.5);
+  margin: 0 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(100, 150, 255, 0.2);
+}
+
+button:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(100, 150, 255, 0.5), rgba(186, 104, 200, 0.5));
+  border-color: rgba(186, 104, 200, 0.8);
+  box-shadow: 0 0 25px rgba(186, 104, 200, 0.6);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+select, input[type="file"] {
+  background: rgba(15, 20, 50, 0.6);
+  color: #e0e6ff;
+  border: 1px solid rgba(100, 150, 255, 0.4);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: rgba(186, 104, 200, 0.7);
+}
