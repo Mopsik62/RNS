@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/RNS/static/css/main.e48c1916.css",
+    "main.js": "/RNS/static/js/main.968a9451.js",
+    "run4_yolov8s.onnx": "/RNS/run4_yolov8s.onnx",
+    "static/js/ort-wasm-simd-threaded.jsep.wasm": "/RNS/static/js/ort-wasm-simd-threaded.jsep.wasm",
+    "static/media/ort-wasm-simd-threaded.jsep.wasm": "/RNS/static/media/ort-wasm-simd-threaded.jsep.7159377c07b0033df76a.wasm",
+    "static/js/ort-wasm-simd-threaded.asyncify.wasm": "/RNS/static/js/ort-wasm-simd-threaded.asyncify.wasm",
+    "static/js/ort-wasm-simd-threaded.jspi.wasm": "/RNS/static/js/ort-wasm-simd-threaded.jspi.wasm",
+    "static/js/ort-wasm-simd-threaded.wasm": "/RNS/static/js/ort-wasm-simd-threaded.wasm",
+    "run1_baseline.onnx": "/RNS/run1_baseline.onnx",
+    "run2_low_lr.onnx": "/RNS/run2_low_lr.onnx",
+    "run3_augmented.onnx": "/RNS/run3_augmented.onnx",
+    "model.onnx": "/RNS/model.onnx",
+    "static/media/ort.bundle.min.mjs": "/RNS/static/media/ort.bundle.min.ed05fc6785c446558030.mjs",
+    "mask-yolov8-seg.onnx": "/RNS/mask-yolov8-seg.onnx",
+    "nms-yolov8.onnx": "/RNS/nms-yolov8.onnx",
+    "index.html": "/RNS/index.html",
+    "main.e48c1916.css.map": "/RNS/static/css/main.e48c1916.css.map",
+    "main.968a9451.js.map": "/RNS/static/js/main.968a9451.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e48c1916.css",
+    "static/js/main.968a9451.js"
+  ]
+}
